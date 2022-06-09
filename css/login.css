@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#left {
+  background-image: url(https://dummyimage.com/1920x1080);
+  background-size: cover;
+}
+
+.bg-gray-500 {
+  background-color: #6b7280;
+}
+
+.bg-gray-500 .inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-gray-500 .bg-black {
+  background-color: black;
+}
+
+.bg-gray-500 .opacity-60 {
+  opacity: 0.6;
+}
+
+.bg-gray-500 .z-0 {
+  z-index: 0;
+}
+
+.bg-gray-500 .px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.bg-gray-500 .z-1 {
+  z-index: 1;
+}
+
+.bg-gray-500 .z-1 .text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.bg-gray-500 .z-1 .tracking-wide {
+  letter-spacing: .025em;
+}
+
+.bg-gray-500 .z-1 .text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.bg-gray-500 .bottom-0 {
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/*# sourceMappingURL=login.css.map */

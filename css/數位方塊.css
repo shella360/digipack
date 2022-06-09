@@ -1,341 +1,440 @@
-*{
+* {
     box-sizing: border-box;
     font-family: Microsoft JhengHei UI;
-    font-family: ui-sans-serif,system-ui,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
     background-color: #f3f4f6 !important;
 }
-.fa-solid{
+
+#login {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0, .1),0 1px 2px 0 rgba(0,0,0,.06);
+    display: none;
+    width: 12rem;
+    transition: 1s;
+}
+#login>a:hover{
+    background-color: rgb(229,231,235) ;
+}
+.fa-solid {
     font-size: 27px;
+    cursor: pointer;
 }
-.swiper-slide img{
-width: 100%;
-height: 500px; 
+
+.swiper-slide img {
+    width: 100%;
+    height: 500px;
 }
+
 /* container的padding */
-.py-24{
-    padding-top:6rem;
+.py-24 {
+    padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
 /* 藍色槓槓 */
-.bg-primary{
+.bg-primary {
     width: 4rem;
     height: 0.25rem;
 }
+
 /* stars icon */
-.w-10{
+.w-10 {
     width: 2.5rem;
-    height: 2.5rem; 
+    height: 2.5rem;
 }
-.f1{
-  color: #6366f1;
+
+.f1 {
+    color: #6366f1;
 }
+
 /* stars icon bg */
-.w-20{
+.w-20 {
     width: 5rem;
     height: 5rem;
     background-color: #e0e7ff;
 }
+
 /* 箭頭icon */
-.w-4{
-width: 1rem;
-height: 1rem;
+.w-4 {
+    width: 1rem;
+    height: 1rem;
 }
 
 /* Button */
-.px-8{
+.px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #6366f1;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 18px;
 }
-.mt-16{
+
+.mt-16 {
     margin-top: 4rem;
 }
-.px-6{
+
+.px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     background-color: #3b82f6;
     color: #fff;
 }
+
 /* Master */
-.mb-20{
+.mb-20 {
     margin-bottom: 5rem;
 }
+
 /* table */
-.table-auto{
+.table-auto {
     table-layout: auto;
 }
-.bg-gray{
-/* background-color :#f3f4f6; */
-background-color: rgb(243,244,246);
+
+.bg-gray {
+    /* background-color :#f3f4f6; */
+    background-color: rgb(243, 244, 246);
 }
-.py-6{
+
+.py-6 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
-.text-lg{
+
+.text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
 }
-.border-b-2{
+
+.border-b-2 {
     border-bottom: 2px solid #dee2e6;
 }
+
 /* 4cards區藍色槓槓 */
-.h-1{
+.h-1 {
     width: 5rem;
     height: 0.25rem;
     background-color: #6366f1;
-    
+
 }
+
 /* p的顏色 */
 /* text-gray-500 */
-.text-gray{
-    color: rgb(107,114,128);
+.text-gray {
+    color: rgb(107, 114, 128);
 }
+
 /* cards */
-.rounded-xl{
+.rounded-xl {
     border-radius: 0.5rem;
 }
+
 /* cards img */
-.h-40{
-height: 10rem;
+.h-40 {
+    height: 10rem;
 }
-.text-xs{
+
+.text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
 }
 
 /* icon */
-.pd-10{
+.pd-10 {
     padding-bottom: 2.5rem;
 }
-.mb-10{
+
+.mb-10 {
     margin-bottom: 2.5rem;
 }
-.mt-6{
+
+.mt-6 {
     margin-top: 1.5rem;
 }
-.mt-20{
+
+.mt-20 {
     margin-top: 5rem;
 }
-.pr-10{
+
+.pr-10 {
     padding-right: 2.5rem;
 }
+
 /* small */
 
 /* 400*400 */
-.h-64{
+.h-64 {
     height: 16rem;
 }
-.object-center{
+
+.object-center {
     object-position: center;
 }
-.object-cover{
+
+.object-cover {
     object-fit: cover;
 }
-.text-sm{
+
+.text-sm {
     font-size: .875rem;
     line-height: 1.25rem;
-  
+
 }
-.tracking-widest{
+
+.tracking-widest {
     letter-spacing: .1em;
 }
-.text-3xl{
-font-size: 1.875rem;
-line-height: 2.25rem;
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
-.ml-75{
-margin-left: .75rem;
+
+.ml-75 {
+    margin-left: .75rem;
 }
-.pl-75{
+
+.pl-75 {
     padding-left: .75rem;
 }
+
 /* catcher */
-.py-75{
+.py-75 {
     padding-top: .75rem;
     padding-bottom: .75rem;
 }
-.border-left-2{
+
+.border-left-2 {
     border-left: 2px solid #dee2e6;
 }
-.text-gray-600{
-    color: rgb(75,85,99);
+
+.text-gray-600 {
+    color: rgb(75, 85, 99);
 }
-.w-5{
+
+.w-5 {
     width: 1.25rem;
     height: 1.25rem;
 }
-.leading-relaxed{
+
+.leading-relaxed {
     line-height: 1.625;
 }
-.border-gray-300{
-   border-color:rgb(209,213,219) ;
+
+.border-gray-300 {
+    border-color: rgb(209, 213, 219);
 }
-.w-6{
+
+.w-6 {
     width: 1.5rem;
     height: 1.5rem;
 }
-.mr-75{
+
+.mr-75 {
     margin-right: 0.75rem;
 }
-.bg-indigo{
-    background-color: rgb(99,102,241);;
+
+.bg-indigo {
+    background-color: rgb(99, 102, 241);
+    ;
 }
-button{
+
+button {
     border-style: solid;
 }
-.bg-gray-700{
-    background-color: rgb(75,85,99);
+
+.bg-gray-700 {
+    background-color: rgb(75, 85, 99);
 }
-button:focus{
+
+button:focus {
     outline: 2px solid black;
     outline-offset: 2px;
 }
+
 /* button:active{
     border-style: solid;
 } */
-.pb-1-25{
+.pb-1-25 {
     padding-bottom: 1.25rem;
 }
-.mb-1-25{
+
+.mb-1-25 {
     margin-bottom: 1.25rem;
 }
-.border-gray-100{
+
+.border-gray-100 {
     border-color: #f3f4f6;
 }
-.appear-none{
+
+.appear-none {
     appearance: none;
 }
-.right-0{
+
+.right-0 {
     right: 0;
-    top:0;
+    top: 0;
 }
-select:focus{
-    outline: 2px solid rgb(199,210,254);
+
+select:focus {
+    outline: 2px solid rgb(199, 210, 254);
 }
-.font-medium{
+
+.font-medium {
     font-weight: 500;
 }
-.text-2xl{
+
+.text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
 }
-.text-gray-900{
-    color: rgb(17,24,39);
+
+.text-gray-900 {
+    color: rgb(17, 24, 39);
 }
-.bg-gray-200{
-    background-color: rgb(229,231,235);
+
+.bg-gray-200 {
+    background-color: rgb(229, 231, 235);
 }
+
 /* 8cardS */
-.h-48{
+.h-48 {
     height: 12rem;
 }
+
 /* 地圖+feedback */
-.bg-gray-300{
-   background-color:  rgb(209,213,219);
+.bg-gray-300 {
+    background-color: rgb(209, 213, 219);
 }
-.inset-0{
-    top:0;
+
+.inset-0 {
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
-.p-8{
+
+.p-8 {
     padding: 2rem;
 }
-.z-10{
+
+.z-10 {
     z-index: 10;
 }
+
 /* Feedback */
-.leading-7{
+.leading-7 {
     line-height: 1.75rem;
 }
-.h-32{
+
+.h-32 {
     height: 8rem;
 }
-.text-base{
+
+.text-base {
     font-size: 1rem;
     line-height: 1.5rem;
 }
-.outline-none{
+
+.outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
-.text-gray-700{
-    color: rgb(55,65,81);
+
+.text-gray-700 {
+    color: rgb(55, 65, 81);
 }
-.px-75{
+
+.px-75 {
     padding: 0 0.75rem;
 }
-#email:focus,#message:focus{
-border-color: rgba(99,102,241,0.5) !important ;
-/* box-shadow: 2px 2px 0 rgba(199, 210, 254,0.5); */
-outline: 2px solid rgba(199, 210, 254,1);
-outline-offset: 0px;
+
+#email:focus,
+#message:focus {
+    border-color: rgba(99, 102, 241, 0.5) !important;
+    /* box-shadow: 2px 2px 0 rgba(199, 210, 254,0.5); */
+    outline: 2px solid rgba(199, 210, 254, 1);
+    outline-offset: 0px;
 }
-#Feedback:hover{
-    background-color: rgb(79,70,229);
+
+#Feedback:hover {
+    background-color: rgb(79, 70, 229);
 }
-.mt-75{
+
+.mt-75 {
     margin-top: .75rem;
 }
+
 /* footer */
-.w-64{
+.w-64 {
     width: 16rem;
 }
-.text-xl{
+
+.text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
-a:hover{
-    color:rgb(17,24,39);
+
+a:hover {
+    color: rgb(17, 24, 39);
     text-decoration: none;
 }
-.mb-n10{
+
+.mb-n10 {
     margin-bottom: -2.5rem;
 }
-.mb-75{
+
+.mb-75 {
     margin-bottom: .75rem;
 }
-.bg-gray-100{
-    background-color: rgb(243,244,246);
-    
+
+.bg-gray-100 {
+    background-color: rgb(243, 244, 246);
+
 }
+
 /* small */
-@media(min-width:640px){
-    .w-sm-32{
+@media(min-width:640px) {
+    .w-sm-32 {
         width: 8rem;
         height: 8rem;
     }
-    .w-sm-16{
+
+    .w-sm-16 {
         width: 4rem;
         height: 4rem;
     }
-    .mr-sm-10{
+
+    .mr-sm-10 {
         margin-right: 2.5rem;
     }
 }
+
 /* Medium */
 @media (min-width:768px) {
-    .pl-md-20{
+    .pl-md-20 {
         padding-left: 5rem;
-    } 
+    }
 }
+
 /* large */
-@media(min-width:1024px){
-.h-lg-auto{
-    height: auto;
-}
-.pl-lg-10{
-    padding-left: 2.5rem;
-}
+@media(min-width:1024px) {
+    .h-lg-auto {
+        height: auto;
+    }
+
+    .pl-lg-10 {
+        padding-left: 2.5rem;
+    }
 }

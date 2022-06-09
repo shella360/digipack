@@ -8,11 +8,10 @@
   <title>數位方塊</title>
   <link rel="short cut icon" href="./img/logo-2.svg">
   <!-- BS4 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="./css/all.css">
-  <link rel="stylesheet" href="./數位方塊.css">
+  <link rel="stylesheet" href="./css/數位方塊.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
@@ -32,27 +31,28 @@
         class="collapse navbar-collapse flex-row-reverse flex-col flex-grow md:pb-0 md:flex md:justify-end md:flex-row hidden"
         id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link px-4 py-2 mt-2 text-sm-center justify-content-center align-items-center     font-semibold bg-transparent rounded-lg"
+          <a class="nav-link px-4 py-2 mt-2 text-sm-center d-flex justify-content-center align-items-center font-semibold bg-transparent rounded-lg"
             href="#">Blog <span class="sr-only">(current)</span></a>
-          <a class="nav-link px-4 py-2 mt-2 text-sm-center justify-content-center align-items-center  font-semibold bg-transparent rounded-lg"
+          <a class="nav-link px-4 py-2 mt-2 text-sm-center d-flex justify-content-center align-items-center  font-semibold bg-transparent rounded-lg"
             href="#">Portfolio</a>
-          <a class="nav-link px-4 py-2 mt-2 text-sm-center justify-content-center align-items-center         bg-transparent rounded-lg"
+          <a class="nav-link px-4 py-2 mt-2 text-sm-center d-flex justify-content-center align-items-center  bg-transparent rounded-lg"
             href="#">About</a>
-          <a
-            class="nav-link px-4 py-2 mt-2 text-sm-center justify-content-center align-items-center bg-transparent rounded-lg">Contact</a>
+          <a class="nav-link px-4 py-2 mt-2 text-sm-center d-flex justify-content-center align-items-center bg-transparent rounded-lg"
+            href="#">Contact</a>
           <div class="d-flex justify-content-center ">
-            <a
-              class="nav-link px-3 md:px-1 py-2 mt-2 text-2xl flex justify-content-center align-items-center   bg-transparent rounded-lg "><i
-                class="fa-solid fa-cart-shopping"></i></a>
+            <a class="text-gray-900 px-3 md:px-1 py-2 mt-2 text-2xl flex justify-content-center align-items-center   bg-transparent rounded-lg"
+              href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             <div
-              class="nav-link px-3 md:px-1 py-2 mt-2 text-2xl flex justify-content-center align-items-center   bg-transparent rounded-lg  ">
-              <i class="fa-solid fa-circle-user"></i>
-              <div class="px-2 py-2 bg-white rounded-lg "><a>Login</a></div>
-                  </div>
-
+              class="px-3 md:px-1 py-2 mt-2 text-2xl flex justify-content-center align-items-center bg-transparent rounded-lg">
+              <i class="fa-solid fa-circle-user">
+                <div id="login" class="px-2 py-2 bg-white rounded-lg"><a
+                    class="d-block px-3 py-2 text-sm font-weight-bold text-gray-900 rounded-lg mt-2 mt-md-0" href="#">Login</a></div>
+              </i>
             </div>
+
           </div>
         </div>
+      </div>
     </nav>
   </header>
   <!-- Swiper -->
@@ -625,6 +625,24 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+  <script>
+    const user = document.querySelector('.fa-circle-user');
+    const login = document.querySelector('#login')
+    // user.addEventListener('click',function (e) {
+    //   login.style.display='block'
+    //   e.stopPropagation();
+    // })
+    // document.addEventListener('click',function(e){
+    //   login.style.display='none'
+    // })
+    user.onclick = function (e) {
+      login.style.display = 'block'
+      e.stopPropagation();
+    }
+    document.onclick = function (e) {
+      login.style.display = 'none'
+    }
+  </script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {

@@ -14,29 +14,19 @@ body {
 #left {
   background-image: url(https://dummyimage.com/1920x1080);
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-black {
+  background-color: black;
 }
 
 .bg-gray-500 {
   background-color: #6b7280;
 }
 
-.bg-gray-500 .inset-0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.bg-gray-500 .bg-black {
-  background-color: black;
-}
-
 .bg-gray-500 .opacity-60 {
   opacity: 0.6;
-}
-
-.bg-gray-500 .z-0 {
-  z-index: 0;
 }
 
 .bg-gray-500 .px-24 {
@@ -44,20 +34,16 @@ body {
   padding-right: 6rem;
 }
 
-.bg-gray-500 .z-1 {
-  z-index: 1;
-}
-
-.bg-gray-500 .z-1 .text-5xl {
+.bg-gray-500 .px-24 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
 
-.bg-gray-500 .z-1 .tracking-wide {
+.bg-gray-500 .px-24 .tracking-wide {
   letter-spacing: .025em;
 }
 
-.bg-gray-500 .z-1 .text-3xl {
+.bg-gray-500 .px-24 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -66,5 +52,117 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+#right {
+  background-color: #162446;
+}
+
+#right .py-6 {
+  padding: 1.5rem 0;
+}
+
+#right .py-6 .w-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#right .py-6 .border-2 {
+  border: 2px solid white;
+}
+
+#right .py-6 .font-bold {
+  font-weight: 700;
+}
+
+#right .py-6 .text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+#right .py-6 #email {
+  border-color: black;
+}
+
+#right .py-6 .text-gray-400 {
+  color: #9ca3af;
+}
+
+#right .py-6 form a:hover {
+  color: #f3f4f6;
+}
+
+#right .py-6 .uppercase {
+  text-transform: uppercase;
+}
+
+#right .py-6 .bg-indigo-500 {
+  background-color: #6366f1;
+  color: inherit;
+  border: none;
+}
+
+#right .py-6 .bg-indigo-500:hover {
+  background-color: #4f46e5;
+}
+
+#right .py-6 button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#right .py-6 .mt-16 {
+  margin-top: 4rem;
+}
+
+#right .py-6 .mt-16 img {
+  cursor: pointer;
+}
+
+#right .py-6 .right-0 {
+  right: 0;
+  left: 0;
+}
+
+#right .z-2 {
+  z-index: 2;
+}
+
+#right .z-2 .my-75 {
+  margin: .75rem 0;
+}
+
+#right2 {
+  background-image: url(https://dummyimage.com/1920x1080);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  #right2 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .min-vh-100 .px-md-16 {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
 }
 /*# sourceMappingURL=login.css.map */

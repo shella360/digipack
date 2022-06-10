@@ -27,10 +27,17 @@ body {
 #login>a:hover{
     background-color: rgb(229,231,235) ;
 }
+.focus:focus{
+    outline: .5px solid gray;
+    outline-offset: -2px;
+}
+
 .fa-solid {
     font-size: 27px;
     cursor: pointer;
 }
+
+
 
 .swiper-slide img {
     width: 100%;

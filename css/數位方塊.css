@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: Microsoft JhengHei UI;
     font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: .3s;
 }
 
 body {
@@ -21,14 +22,14 @@ body {
     z-index: 2;
     box-shadow: 0 1px 3px 0 rgba(0,0,0, .1),0 1px 2px 0 rgba(0,0,0,.06);
     display: none;
-    width: 12rem;
     transition: 1s;
+    transform-origin: top right;
 }
 #login>a:hover{
     background-color: rgb(229,231,235) ;
 }
 .focus:focus{
-    outline: .5px solid gray;
+    outline: .5px solid transparent;
     outline-offset: -2px;
 }
 
@@ -178,7 +179,6 @@ body {
     padding-right: 2.5rem;
 }
 
-/* small */
 
 /* 400*400 */
 .h-64 {
@@ -251,6 +251,10 @@ body {
 .mr-75 {
     margin-right: 0.75rem;
 }
+.mr-75~button:focus{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
 
 .bg-indigo {
     background-color: rgb(99, 102, 241);
@@ -265,14 +269,7 @@ button {
     background-color: rgb(75, 85, 99);
 }
 
-button:focus {
-    outline: 2px solid black;
-    outline-offset: 2px;
-}
 
-/* button:active{
-    border-style: solid;
-} */
 .pb-1-25 {
     padding-bottom: 1.25rem;
 }
@@ -410,7 +407,11 @@ a:hover {
     background-color: rgb(243, 244, 246);
 
 }
-
+@media (min-width:992px) {
+   .w-lg-48{
+        width: 12rem !important;
+    }
+}
 /* small */
 @media(min-width:640px) {
     .w-sm-32 {
@@ -435,7 +436,7 @@ a:hover {
     }
 }
 
-/* large */
+/* extra large */
 @media(min-width:1024px) {
     .h-lg-auto {
         height: auto;

@@ -66,6 +66,7 @@ const app = Vue.createApp({
             return this.countAll;
         },
         Subtotal() {
+            this.subtotal = 0;
             this.product.forEach(item => {
                 this.subtotal += item.count * item.price;
                 console.log(item.count);

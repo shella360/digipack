@@ -53,8 +53,9 @@ const app = Vue.createApp({
             // console.log(item.count);
             // item.count < 99 ? item.count++ : item.count;
         },
-        allCount(product) {
+        Computed(product) {
             console.log(product);
+            this.countAll=0;
             for(var i=0; i<product.length; i++){
                 this.countAll += product[i].count;
             }

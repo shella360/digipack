@@ -184,19 +184,19 @@
                 <div class="d-flex flex-column align-items-end mt-4 pt-4 border-top">
                   <div class="d-flex justify-content-between align-items-center w-25">
                     <span class="text-sm font-medium text-gray-400 mr-2">數量:</span>
-                    <span v-text="computed(product)" class="text-lg font-weight-bold text-gray-800"></span>
+                    <span v-text="allCount" class="text-lg font-weight-bold text-gray-800"></span>
                   </div>
                   <div class="d-flex justify-content-between align-items-center w-25">
                     <span class="text-sm font-medium text-gray-400 mr-2">小計:</span>
-                    <span class="text-lg font-weight-bold text-gray-800">$31.50</span>
+                    <span v-text="Subtotal" class="text-lg font-weight-bold text-gray-800"></span>
                   </div>
                   <div class="d-flex justify-content-between align-items-center w-25">
                     <span class="text-sm font-medium text-gray-400 mr-2">運費:</span>
-                    <span class="text-lg font-weight-bold text-gray-800">$24.90</span>
+                    <span v-text="Freight" class="text-lg font-weight-bold text-gray-800"></span>
                   </div>
                   <div class="d-flex justify-content-between align-items-center w-25">
                     <span class="text-sm font-medium text-gray-400 mr-2">總計:</span>
-                    <span class="text-lg font-weight-bold text-gray-800">$56.40</span>
+                    <span v-text="total" class="text-lg font-weight-bold text-gray-800"></span>
                   </div>
                 </div>
                 <div class="d-flex justify-content-between align-items-center mt-4 pt-4 border-top">

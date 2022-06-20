@@ -4,6 +4,8 @@ const app = Vue.createApp({
         console.log();
         return {
             countAll: 0,
+            subtotal: 0,
+            freight: 24.9,
             product: [
                 {
                     img: './img/checkout/Chicken.jpg',
@@ -53,18 +55,29 @@ const app = Vue.createApp({
             // console.log(item.count);
             // item.count < 99 ? item.count++ : item.count;
         },
-        computed(product) {
-            console.log(product);
-            this.countAll=0;
-            for(var i=0; i<product.length; i++){
-                this.countAll += product[i].count;
-            }
-            console.log(product.length);
-            console.log(product[1].count);
-            return this.countAll
+    },
+    computed: {
+        allCount() {
+            this.countAll = 0;
+            console.log('this.countAll=>', this.countAll);
+            this.product.forEach(item => {
+                this.countAll += item.count;
+            });
+            return this.countAll;
         },
-        
-        
+        Subtotal() {
+            this.product.forEach(item => {
+                this.subtotal += item.count * item.price;
+                console.log(item.count);
+            });
+            return (this.subtotal).toFixed(2);
+        },
+        total() {
+            return (this.subtotal + this.freight).toFixed(2)
+        },
+        Freight() {
+            return this.freight.toFixed(2)
+        }
     },
     //mounted 函式=>做初始化=>一開始的時候只執行一次
     mounted: function () {

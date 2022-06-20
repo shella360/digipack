@@ -58,7 +58,8 @@ const app = Vue.createApp({
             for(var i=0; i<product.length; i++){
                 this.countAll += product[i].count;
             }
-            console.log(this.countAll);
+            console.log(product.length);
+            console.log(product[1].count);
             return this.countAll
         },
         

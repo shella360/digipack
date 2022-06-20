@@ -454,6 +454,12 @@ width: calc(100% / 3);
 .pr-8{
     padding-right: 2rem;
 }
+.w-12{
+    width: 3rem;
+}
+.mr-8{
+    margin-right: 2rem;
+}
 .font-semibold {
     font-weight: 600;
 }

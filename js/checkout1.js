@@ -1,7 +1,9 @@
-Vue.createApp({
+const app = Vue.createApp({
     //data:函式=>處理資料
     data: function () {
+        console.log();
         return {
+            countAll: 0,
             product: [
                 {
                     img: './img/checkout/Chicken.jpg',
@@ -21,7 +23,7 @@ Vue.createApp({
                 },
                 {
                     img: './img/checkout/Breakfast.jpg',
-                    name:'Breakfast',
+                    name: 'Breakfast',
                     num: '#86577',
                     count: 0,
                     price: 10.5,
@@ -29,23 +31,37 @@ Vue.createApp({
                 },
             ]
         }
-        console.log(this.product.count1);
     },
     //methods:方法=>物件
     methods: {
-        singlePay() {
-            return (this.product.pay = this.product.count * this.product.price).toFixed(2)
+        singlePay(item) {
+            // console.log(item);
+            return (item.pay = item.count * item.price).toFixed(2)
+        },
+        Reduce(item) {
+            if (item.count <= 0) {
+                alert('請勿輸入負數')
+
+            } else {
+                item.count--;
+            }
+            // console.log(item.count);
+            // item.count > 0 ? item.count-- : item.count;
+        },
+        Increase(item) {
+            item.count++;
+            // console.log(item.count);
+            // item.count < 99 ? item.count++ : item.count;
+        },
+        allCount(product) {
+            console.log(product);
+            for(var i=0; i<product.length; i++){
+                this.countAll += product[i].count;
+            }
+            console.log(this.countAll);
+            return this.countAll
         },
         
-        allCount() {
-            return (this.product.count)
-        },
-        warn() {
-            if (this.count < 0) {
-                alert('請勿輸入負數')
-            }
-        },
-       
     },
     //mounted 函式=>做初始化=>一開始的時候只執行一次
     mounted: function () {

@@ -460,6 +460,9 @@ width: calc(100% / 3);
 .mr-8{
     margin-right: 2rem;
 }
+.pointer{
+    cursor: pointer;
+}
 .font-semibold {
     font-weight: 600;
 }

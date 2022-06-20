@@ -130,9 +130,9 @@
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
                       <div class="d-flex pr-8">
-                        <span @click="item.count--" class="font-semibold">-</span>
-                        <input type="text" v-model="item.count"  class="bg-gray-100 border rounded text-sm px-2 mx-2 h-6 w-8">
-                        <span @click="item.count++" class="font-semibold"> +
+                        <span @click="Reduce(item)" class="font-semibold pointer">-</span>
+                        <input type="text" v-model="item.count"  class="bg-gray-100 border rounded text-sm px-2 mx-2 h-6 w-10 text-center">
+                        <span @click="Increase(item)" class="font-semibold pointer"> +
                          </span>
                       </div> 
                       <div class="w-8 mr-8">
@@ -184,7 +184,7 @@
                 <div class="d-flex flex-column align-items-end mt-4 pt-4 border-top">
                   <div class="d-flex justify-content-between align-items-center w-25">
                     <span class="text-sm font-medium text-gray-400 mr-2">數量:</span>
-                    <span v-text="" class="text-lg font-weight-bold text-gray-800"></span>
+                    <span v-text="allCount(product)" class="text-lg font-weight-bold text-gray-800"></span>
                   </div>
                   <div class="d-flex justify-content-between align-items-center w-25">
                     <span class="text-sm font-medium text-gray-400 mr-2">小計:</span>

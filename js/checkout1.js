@@ -53,7 +53,7 @@ const app = Vue.createApp({
             // console.log(item.count);
             // item.count < 99 ? item.count++ : item.count;
         },
-        Computed(product) {
+        computed(product) {
             console.log(product);
             this.countAll=0;
             for(var i=0; i<product.length; i++){
@@ -63,6 +63,7 @@ const app = Vue.createApp({
             console.log(product[1].count);
             return this.countAll
         },
+        
         
     },
     //mounted 函式=>做初始化=>一開始的時候只執行一次

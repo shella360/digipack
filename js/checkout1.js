@@ -21,7 +21,7 @@ Vue.createApp({
                 },
                 {
                     img: './img/checkout/Breakfast.jpg',
-                    name: 'Breakfast',
+                    name:'Breakfast',
                     num: '#86577',
                     count: 0,
                     price: 10.5,
@@ -29,13 +29,14 @@ Vue.createApp({
                 },
             ]
         }
-
+        console.log(this.product.count1);
     },
     //methods:方法=>物件
     methods: {
         singlePay() {
             return (this.product.pay = this.product.count * this.product.price).toFixed(2)
         },
+        
         allCount() {
             return (this.product.count)
         },
